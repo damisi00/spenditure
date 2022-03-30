@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   return (
-    <div>
+    <div className="mobile--nav nav d-flex d-md-none d-lg-none justify-content-center flex-row nav-tabs mt-0 bg-light h-25 w-100 me-auto ms-auto">
 
       {/* <!-- Mobile Nav Fixed bottom --> */}
       <nav id="nav" className="d-flex">
         <div className="nav-item px-1">
           <a
             className="nav-link  d-flex flex-column text-center"
-            href="./home.html"
+            href="./homepage"
           >
             <div>
               <svg
@@ -26,9 +27,9 @@ const MobileNav = () => {
           </a>
         </div>
         <div className="nav-item px-1">
-          <a
+          <Link
             className="nav-link d-flex flex-column text-center"
-            href="./tracker.html"
+            to="/tracker"
           >
             <div>
               <svg
@@ -47,7 +48,7 @@ const MobileNav = () => {
               </svg>
             </div>
             <small>Tracker</small>
-          </a>
+          </Link>
         </div>
         <div id="pop-menu" className="add--button nav-item">
             <img src="./Images/Add-icon.svg" alt="" />

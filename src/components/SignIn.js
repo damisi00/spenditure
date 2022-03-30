@@ -7,7 +7,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import SignUp from "./signUp/SignUp";
 import LandingPage from "./landingPage/LandingPage";
 import { useState } from "react";
-import Home from "./Home";
+import Home from "./home/Home";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");

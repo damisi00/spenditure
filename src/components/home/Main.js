@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Google from "../images/download-google.svg";
-import Apple from "../images/download-apple.svg";
-import User from "../images/custmer-img.svg";
+import Google from "../../images/download-google.svg";
+import Apple from "../../images/download-apple.svg";
+import User from "../../images/custmer-img.svg";
 import MobileNav from "./MobileNavMenu";
 
 const Greetings = () => {
@@ -45,10 +45,10 @@ const UserImage = () => {
   );
 };
 
-const Income = () => {
+export const Income = () => {
   return (
     <div className="container g-0">
-      <div className="home--income card">
+      <Link to="/income" className="home--income card">
         <div style={{ padding: "10px 10px" }}>
           <img
             style={{ color: "#41dc65" }}
@@ -57,18 +57,16 @@ const Income = () => {
           />
         </div>
         <p
-          className="income-title"
-          style={{ marginLeft: "10px", color: "#1d2025" }}
-        >
+          className="income-title">
           Income
         </p>
         <h5 className="income-value">$6,593.75</h5>
-      </div>
+      </Link>
     </div>
   );
 };
 
-const Expense = () => {
+export const Expense = () => {
   return (
     <div className="container g-0">
       <div className="card home--income">
@@ -307,7 +305,7 @@ const Main = () => {
                   <Expense />
                 </div>
               </div>
-              <div className="mobile--nav nav d-flex d-md-none d-lg-none justify-content-center flex-row nav-tabs mt-0 bg-light h-25 w-100 me-auto ms-auto">
+              <div>
                 <MobileNav />
               </div>
             </div>

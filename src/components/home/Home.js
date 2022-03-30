@@ -1,8 +1,7 @@
 import React from "react";
-import RightNav from "./RightNav";
-import Main from "./Main";
-import LeftNav from "./LeftNav";
-import "./main.css";
+import RightNav from "../home/RightNav";
+import LeftNav from "../home/LeftNav";
+import Main from "../home/Main"
 const Home = () => {
   return (
     <main>
