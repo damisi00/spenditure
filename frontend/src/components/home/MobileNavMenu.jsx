@@ -54,9 +54,9 @@ const MobileNav = () => {
             <img src="./Images/Add-icon.svg" alt="" />
         </div>
         <div className="nav-item px-1 ms-2">
-          <a
+          <Link
             className="nav-link d-flex flex-column text-center"
-            href="/budget"
+            to="/budget"
           >
             <div>
               <svg
@@ -75,7 +75,7 @@ const MobileNav = () => {
               </svg>
             </div>
             <small>Budget</small>
-          </a>
+          </Link>
         </div>
         <div className="nav-item px-1">
           <a

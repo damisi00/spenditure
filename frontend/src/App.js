@@ -10,6 +10,8 @@ import AboutUs from "./components/AboutUs";
 import Tracker from "./components/tracker/Tracker";
 import TrackerIncome from "./components/tracker/TrackerIncome";
 import TrackerExpense from "./components/tracker/TrackerExpense";
+import Budget from "./components/budget/Budget";
+import CreatBudget from "./components/budget/CreateBudget";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route exact path="/tracker/*" element={<Tracker />}></Route>
         <Route exact path="/income/*" element={<TrackerIncome />}></Route>
         <Route exact path="/expense/*" element={<TrackerExpense />}></Route>
+        <Route exact path="/budget/*" element={<Budget />}></Route>
+        <Route exact path="/newbudget/*" element={<CreatBudget />}></Route>
       </Routes>
     </div>
   );

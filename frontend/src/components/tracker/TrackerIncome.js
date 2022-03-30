@@ -81,7 +81,7 @@ const TrackerIncome = () => {
         <div className="d-flex flex-row justify-content-between ">
           <div className="d-flex">
             <Link to="/tracker">
-              <img className="me-4" src={Back} alt="" />
+              <img className="me-4 mt-2" src={Back} alt="" />
             </Link>
 
             <h1>Income</h1>

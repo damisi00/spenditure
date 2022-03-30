@@ -482,6 +482,72 @@ a {
     line-height: 12px;
     color: #1d2025;
   }
+
+  /* Budget  */
+
+  .budget-header {
+    height: 122px;
+    width: 375px;
+    border-radius: 20px;
+    /* SPENDITURE GRAY */
+
+    background: #dededf;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+  }
+
+  .budget--calender .col-sm-2 > .btn {
+    height: 32px;
+    width: 46px;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .budget--calender .col-sm-2 > p {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .w-90 {
+    width: 90%;
+  }
+  .w-43 {
+    width: 43%;
+  }
+
+  .bdgt-card {
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.02);
+    background-color: #dededf;
+  }
+
+  .bdgt-fs {
+    font-size: 0.8rem;
+  }
+
+  .bdgt-progress {
+    height: 5px;
+    background-color: #1d2025;
+  }
+
+  .bdgt-bar {
+    background-color: #33c9ff;
+  }
+
+  .bdgt-bar-two {
+    background-color: #ff5460;
+  }
+
+  .create--budget {
+    border-radius: 10px;
+    /* SPENDITURE GRAY */
+
+    background: #dededf;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+  }
 }
 
 /* From main.css */
