@@ -447,6 +447,32 @@ a {
     line-height: 24px;
     color: #1d2025;
   }
+
+  .income--card {
+    height: 130px;
+    width: 338px;
+    background: #40db6e;
+    box-shadow: 0px 18px 42px rgba(51, 201, 255, 0.2);
+    border-radius: 20px;
+  }
+
+  .income--fig {
+    height: 12px;
+    width: 64px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #1d2025;
+  }
+
+  .income-username {
+    width: 126px;
+    height: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #1d2025;
+  }
 }
 
 /* From main.css */

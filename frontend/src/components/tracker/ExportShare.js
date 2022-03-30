@@ -34,7 +34,7 @@ const Share = () => {
 
 const ExportShare = () => {
   return (
-    <div className="d-flex justify-content-between">
+    <div className="d-flex justify-content-evenly">
       <Export />
       <Share />
     </div>
