@@ -102,6 +102,8 @@ const TrackerIncome = () => {
           </div>
         </div>
       </div>
+      <IncomeTransaction />
+
       <ExportShare />
     </div>
   );
