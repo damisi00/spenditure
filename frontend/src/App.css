@@ -456,6 +456,15 @@ a {
     border-radius: 20px;
   }
 
+  .expense--card {
+    height: 130px;
+    width: 338px;
+    background: rgba(255, 84, 96, 1);
+
+    box-shadow: 0px 18px 42px rgba(51, 201, 255, 0.2);
+    border-radius: 20px;
+  }
+
   .income--fig {
     height: 12px;
     width: 64px;

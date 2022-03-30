@@ -56,10 +56,7 @@ export const Income = () => {
             alt=""
           />
         </div>
-        <p
-          className="income-title">
-          Income
-        </p>
+        <p className="income-title">Income</p>
         <h5 className="income-value">$6,593.75</h5>
       </Link>
     </div>
@@ -69,13 +66,15 @@ export const Income = () => {
 export const Expense = () => {
   return (
     <div className="container g-0">
-      <div className="card home--income">
-        <div style={{ padding: "10px 10px" }}>
-          <img src="./Images/webforwardarrow.svg" alt="" />
+      <Link to="/expense">
+        <div className="card home--income">
+          <div style={{ padding: "10px 10px" }}>
+            <img src="./Images/webforwardarrow.svg" alt="" />
+          </div>
+          <p className="expense-title">Expense</p>
+          <h5 className="expense-value">$2,645.50</h5>
         </div>
-        <p className="expense-title">Expense</p>
-        <h5 className="expense-value">$2,645.50</h5>
-      </div>
+      </Link>
     </div>
   );
 };

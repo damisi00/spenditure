@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import AboutUs from "./components/AboutUs";
 import Tracker from "./components/tracker/Tracker";
 import TrackerIncome from "./components/tracker/TrackerIncome";
+import TrackerExpense from "./components/tracker/TrackerExpense";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/account/*" element={<Account />}></Route>
         <Route exact path="/tracker/*" element={<Tracker />}></Route>
         <Route exact path="/income/*" element={<TrackerIncome />}></Route>
+        <Route exact path="/expense/*" element={<TrackerExpense />}></Route>
       </Routes>
     </div>
   );
