@@ -9,27 +9,23 @@ const Updates = () => {
       style={{ backgroundImage: `url(${BG})` }}
     >
       <div className="p-5">
-        <h1>Want our Latest Updates?</h1>
+        <div>
+          <h1>Want our Latest Updates?</h1>
 
-        <p className="mt-4">Subscribe to our newsletter</p>
+          <p className="mt-4">Subscribe to our newsletter</p>
+        </div>
         <form className="position-relative mt-5 d-flex justify-content-center">
-          <span
-            className="position-absolute start-10 translate-start"
-            style={{ left: "480px", top: "8px" }}
-          >
-            <img src={ENVELOP} alt="envelop" />
-          </span>
-          <input
-            className="ps-5 float-left form-control w-25 py-2"
-            type="text"
-            placeholder="Your Email"
-          />
-          <span
-            className="position-absolute start-50 translate-end"
-            style={{ right: "395px", top: "2px" }}
-          >
-            <button className="btn btn-dark  top-50 text-light">Submit</button>
-          </span>
+          <div className="input-group w-75">
+            <div className="position-relative start-50 z-index-3">
+              <img src={ENVELOP} alt="envelop" />
+            </div>
+            <input
+              className="update--input ps-4 form-control"
+              type="email"
+              placeholder="Your Email"
+            />
+            <button className="btn btn-dark start-0 text-light">Submit</button>
+          </div>
         </form>
       </div>
     </div>
