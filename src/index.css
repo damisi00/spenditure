@@ -78,7 +78,7 @@
   border-radius: 20px;
   background-color: #dededf;
   width: 45%;
-  height: 30vh;
+  height: 32vh;
 }
 
 .bank-cat:active, .bank-cat:focus{
@@ -100,7 +100,7 @@
   font-size: 0.7rem;
 }
 
-#create-bdgt-name, #enter-bdgt, #bdgt-duration, #account-name, #starter-amount{
+#create-bdgt-name, #enter-bdgt, #bdgt-duration, #account-name, #starter-amount, #enter-payee-name, #enter-transaction-amount{
   outline: none;
   border-radius: 0;
   box-shadow: none;
@@ -191,7 +191,8 @@ select{
 /* End of empty budget */
 
 /* ACcount creation */
-#account-name::placeholder, #starter-amount::placeholder{
+#account-name::placeholder, #starter-amount::placeholder, #enter-payee-name::placeholder,
+#enter-transaction-amount::placeholder{
   opacity: 0.12;
 }
 
@@ -212,3 +213,40 @@ select{
   border-left: 0.5px solid #f7f7fa40;
 }
 /* End of Account creation */
+
+/* Transaction View */
+
+.btn-edit{
+  border: 1px solid #ff5460;
+  filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.2));
+  border-radius: 10px;
+  color: #ff5460;
+}
+
+.w-80{
+  width: 80%;
+}
+
+.border-dashed{
+  border: 1px dashed #1d2025;
+}
+
+.rounded-nav{
+  border-radius: 10px;
+  background-color: #dededf;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+ 
+}
+
+.opacity-80{
+  opacity: 0.8;
+}
+
+/* Transaction type expense */
+.btn-forward-arrow{
+  background-color: #3ec3d5;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.07);
+  width: 45px;
+  height: 45px;
+}

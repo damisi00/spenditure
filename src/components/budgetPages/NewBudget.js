@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Bank2 from '../images/bank2'
+import Bank2 from '../../images/bank2'
 import Search from '../../images/Search-icon'
 import CardIcon from '../../images/card icon'
 import '../../index.css'
