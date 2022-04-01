@@ -165,7 +165,7 @@ a {
 }
 
 .greeting--hello {
-  width: 163px;
+  /* width: 163px; */
   height: 22px;
   font-weight: 500;
   font-size: 30px;
@@ -281,6 +281,17 @@ a {
   letter-spacing: -0.37px;
   color: #1a2537;
 }
+
+.see-all {
+  width: 44px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3ec3d5;
+  margin-left: 130px !important;
+}
+
 
 .mobile--nav {
   position: fixed;
@@ -429,7 +440,7 @@ a {
     font-size: 15px;
     line-height: 20px;
     color: #3ec3d5;
-    margin-left: 100px !important;
+    margin-left: 80px !important;
   }
 
   .home--income {

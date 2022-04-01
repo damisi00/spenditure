@@ -4,12 +4,29 @@ import Google from "../../images/download-google.svg";
 import Apple from "../../images/download-apple.svg";
 import User from "../../images/custmer-img.svg";
 import MobileNav from "./MobileNavMenu";
+import Grocery from "../../images/grocery.svg";
+import Ipad from "../../images/Ipadpro.svg";
+import Uber from "../../images/uber1.svg";
+import Medicine from "../../images/medicine-icon.svg";
 
 const Greetings = () => {
+  const date = new Date();
+  const hours = date.getHours();
+
+  let timeOfDay;
+
+  if (hours < 12) {
+    timeOfDay = "morning!";
+  } else if (hours >= 12 && hours < 17) {
+    timeOfDay = "afternoon!";
+  } else {
+    timeOfDay = "evening!";
+  }
+
   return (
     <div className="container">
       <h1 className="greeting--home">Home</h1>
-      <p className="greeting--hello">Hello, Maria</p>
+      <p className="greeting--hello">Good {timeOfDay} Maria.</p>
     </div>
   );
 };
@@ -101,6 +118,26 @@ const Balance = () => {
   );
 };
 
+const Items = ({ img, item, price, date }) => {
+  return (
+    <div>
+      <div className="d-flex justify-content-between">
+        <div>
+          <img src={img} alt="" />
+        </div>
+        <div className="w-50">
+          <p>
+            {item} <br /> <span>{date}</span>
+          </p>
+        </div>
+        <div>
+          <b>{price}</b>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Activities = () => {
   return (
     <div className="col card border-0">
@@ -120,61 +157,37 @@ const Activities = () => {
           </Link>
         </h5>
 
-        <div className="card-text mt-3">
-          <table className="w-100 h-100">
-            <tbody className="mb-5">
-              <tr>
-                <td>
-                  <img src="./images/medicine-icon.svg" alt="" />
-                </td>
-                <td>
-                  Gaurthier Grewitt <br />
-                  Friday, 11:08 PM
-                </td>
-                <td className="fw-bold text-success">$340.00</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="./Images/medicine-icon.svg" alt="" />
-                </td>
-                <td>
-                  Sukhbirpal Dhalan <br />
-                  Thursday, 01:00 AM
-                </td>
-                <td className="fw-bold text-success">$328.22</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="./Images/medicine-icon.svg" alt="" />
-                </td>
-                <td>
-                  Lia Castro <br />
-                  Tuesday, 07:12 AM
-                </td>
-                <td className="fw-bold text-danger">$2561.34</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="./Images/medicine-icon.svg" alt="" />
-                </td>
-                <td>
-                  Xu Xuefeng <br />
-                  Tuesday, 10:34 PM
-                </td>
-                <td className="fw-bold text-success">$931.12</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="./Images/medicine-icon.svg" alt="" />
-                </td>
-                <td>
-                  Lia Castro <br />
-                  Sunday, 05:40 PM
-                </td>
-                <td className="fw-bold text-success">$128.43</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="mt-4">
+          <Items
+            img={Medicine}
+            item="Gaurthier Grewitt"
+            date="Friday, 11:08 PM"
+            price="$340.00"
+          />
+          <Items
+            img={Medicine}
+            item="Sukhbirpal Dhalan"
+            date="Thursday, 01:00 AM"
+            price="$328.22"
+          />
+          <Items
+            img={Medicine}
+            item="Lia Castro"
+            date="Tuesday, 07:12 AM"
+            price="$2561.34"
+          />
+          <Items
+            img={Medicine}
+            item="Xu Xuefeng"
+            date="Tuesday, 10:34 PM"
+            price="$931.12"
+          />
+          <Items
+            img={Medicine}
+            item="Lia Castro"
+            date="Sunday, 05:40 PM"
+            price="$128.43"
+          />
         </div>
       </div>
     </div>
@@ -199,52 +212,30 @@ const Downloads = () => {
 
 const Categories = () => {
   return (
-    <div className="total container">
-      <span className="total-categories card-subtitle mt-4">
-        Total Categories
-      </span>
-      <span className="see-all" style={{ marginLeft: "110px" }}>
-        <Link to="/">See all</Link>
-      </span>
+    <div className="container">
+      <div className="total mb-4">
+        <span className="total-categories card-subtitle mt-4">
+          Total Categories
+        </span>
+        <span className="see-all">
+          <Link to="/">See all</Link>
+        </span>
+      </div>
 
-      <div className="card-text">
-        <table className="" style={{ width: "118%" }}>
-          <tbody>
-            <tr>
-              <td>
-                <img src="./Images/grocery.svg" alt="" />
-              </td>
-              <td>
-                Grocery <br />
-                15 Aug, 2020
-              </td>
-              <td className="fw-bold">-$243.00</td>
-            </tr>
-            <tr>
-              <td>
-                <img src="./Images/Ipadpro.svg" alt="" />
-              </td>
-              <td>
-                ipad Pro 2020 <br />
-                10 Aug, 2020
-              </td>
-              <td className="fw-bold">-$799.00</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  style={{ width: "30px", height: "30px" }}
-                  src="./Images/Uber.svg"
-                  alt=""
-                />
-              </td>
-              <td>
-                Uber <br />5 Mar 2020
-              </td>
-              <td className="fw-bold">+$50.00</td>
-            </tr>
-          </tbody>
-        </table>
+      <div>
+        <Items
+          img={Grocery}
+          item="Grocery"
+          date="15, Aug. 2020"
+          price="-$243.00"
+        />
+        <Items
+          img={Ipad}
+          item="Ipad pro 2020"
+          date="10, Aug. 2020"
+          price="-$799.00"
+        />
+        <Items img={Uber} item="Uber" date="5, Mar. 2020" price="+$50.00" />
       </div>
     </div>
   );
