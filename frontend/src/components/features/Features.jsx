@@ -1,18 +1,14 @@
-
-import React from 'react'
-import {featureCard1, featureCard2, featureCard3 } from './data' 
-import Feature from './Feature'
-import  './features.css'
+import React from "react";
+import Feature from "./Feature";
+import "./features.css";
+import { cards } from "./data";
 
 const Features = () => {
-    return (
-        <div className="spenditure__features section__padding">
-            <Feature {...featureCard1}/>
-            <Feature {...featureCard2}/>
-            <Feature {...featureCard3}/>
-            
-        </div>
-    )
-}
+  const card = cards.map((feature) => (
+    <Feature key={feature.id} feature={feature} />
+  ));
 
-export default Features
+  return <div className="spenditure__features section__padding">{card}</div>;
+};
+
+export default Features;
