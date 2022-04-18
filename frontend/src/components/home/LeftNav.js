@@ -40,20 +40,20 @@ const LeftNav = () => {
           ></div>
         </div>
 
-        <div id="logo" className="md:flex mb-3 me-3">
+        <div id="logo" className="mb-3 me-3">
           <Link to="/">
             <img src={Logo} alt="" />
           </Link>
         </div>
 
-        <ul id="nav" className="sm-invisible flex md:flex-col flex-1 justify-between md:justify-start py-2 md:py-0 shadow-dark md:shadow-none">
-          <li className="flex-1 md:flex-none">
+        <ul id="nav" className="d-flex flex-column">
+          <li className="">
             <Link
               to="/homepage"
-              className="menu-list flex flex-col md:flex-row md:inline-flex items-center md:mb-4 transition-all md:ml-2"
+              className="menu-list"
               style={{ padding: "5px", display: "flex" }}
             >
-              <svg className="mb-1 md:my-4 md:mr-2 text-lg w-6 h-6 md:w-6 md:h-6"
+              <svg
                 width="19"
                 height="19"
                 viewBox="0 0 19 19"

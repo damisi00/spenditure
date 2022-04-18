@@ -24,7 +24,7 @@ const Greetings = () => {
   }
 
   return (
-    <div className="container">
+    <div className="">
       <h1 className="greeting--home">Home</h1>
       <p className="greeting--hello">Good {timeOfDay} Maria.</p>
     </div>
@@ -33,7 +33,7 @@ const Greetings = () => {
 
 const Bell = () => {
   return (
-    <div className="container">
+    <div className="">
       <div
         style={{ padding: "20px" }}
         className="d-block d-sm-block d-md-none d-lg-none position-relative"
@@ -54,7 +54,7 @@ const Bell = () => {
 
 const UserImage = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className="card-text d-flex">
         <img className="user--img img-fluid" src={User} alt="" />
       </div>
@@ -64,7 +64,7 @@ const UserImage = () => {
 
 export const Income = () => {
   return (
-    <div className="container g-0">
+    <div className="">
       <Link to="/income" className="home--income card">
         <div style={{ padding: "10px 10px" }}>
           <img
@@ -82,7 +82,7 @@ export const Income = () => {
 
 export const Expense = () => {
   return (
-    <div className="container g-0">
+    <div className="">
       <Link to="/expense" className="card home--income">
         <div style={{ padding: "10px 10px" }}>
           <img src="./Images/webforwardarrow.svg" alt="" />
@@ -96,21 +96,20 @@ export const Expense = () => {
 
 const Balance = () => {
   return (
-    <div className="home--balance card p-3">
-      <div className="d-inline-flex">
-        <span>
+    <div className="home--balance p-3">
+      <div className="row ">
+        <div className="col">
           <h6 className="balance">My Balance</h6>
 
           <h4 className="balance--value">$25,520</h4>
-        </span>
-
-        <span style={{ marginLeft: "auto" }}>
+        </div>
+        <div className="col">
           <img
             className="balance--calender"
             src="./images/calender.svg"
             alt=""
           />
-        </span>
+        </div>
       </div>
     </div>
   );
@@ -123,7 +122,7 @@ const Items = ({ img, item, price, date }) => {
         <div>
           <img src={img} alt="" />
         </div>
-        <div className="w-50">
+        <div className="">
           <p>
             {item} <br /> <span>{date}</span>
           </p>
@@ -210,7 +209,7 @@ const Downloads = () => {
 
 const Categories = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className="total mb-4">
         <span className="total-categories card-subtitle mt-4">
           Total Categories
@@ -242,8 +241,8 @@ const Categories = () => {
 const Main = () => {
   return (
     <div>
-      <div className="">
-        <div className="d-flex-xs card home-card pt-2 px-2 pe-2 mt-4 mb-5">
+      <div className="px-3">
+        <div className="d-flex row home-card pt-2 px-2 mt-4 mb-5">
           <div className="d-flex justify-content-between px-1 pb-1">
             <div className="text-light">
               <Greetings />
@@ -258,7 +257,7 @@ const Main = () => {
           </div>
 
           <div className="row justify-between">
-            <div className="col-md-4 d-none d-md-flex">
+            <div className="col d-none d-md-flex">
               <div className="px-3">
                 <Income />
               </div>
@@ -266,7 +265,7 @@ const Main = () => {
                 <Expense />
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col">
               <Balance />
             </div>
           </div>
@@ -277,7 +276,7 @@ const Main = () => {
             <Activities />
           </div>
 
-          <div className="col-sm-12 col-md-6 col-lg-6 card border-0 mb-0 px-0">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6 card border-0 mb-0 px-0">
             <div className="card-body px-0">
               <div className="d-none d-sm-none d-md-flex d-lg-flex">
                 <Downloads />
@@ -285,15 +284,15 @@ const Main = () => {
               <div className="container">
                 <Categories />
               </div>
-              <div className=" d-flex d-sm-flex d-md-none d-lg-none pt-3 px-3 mb-5">
-                <div className="px-1">
+              <div className=" d-flex d-sm-flex d-md-none d-lg-none pt-3 mb-5 justify-content-center justify-content-evenly">
+                <div className="">
                   <Income />
                 </div>
-                <div className="px-1">
+                <div className="">
                   <Expense />
                 </div>
               </div>
-              <div>
+              <div className="">
                 <MobileNav />
               </div>
             </div>

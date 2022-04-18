@@ -2,6 +2,7 @@
 
 body {
   font-family: "Plus Jakarta Display", sans-serif !important;
+  color: #1D2025;
 }
 
 * {
@@ -142,22 +143,28 @@ a {
   letter-spacing: 0.005em;
   color: #ffffff;
 }
-
-.update--input {
-  width: 430px;
+.news-input{
+  text-indent: 15px;
+}
+.envelop-icon{
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  z-index: 1;
+  color: black;
 }
 
 .home-card {
   background: #1a2537 !important;
   box-shadow: 0px 18px 48px rgba(0, 0, 0, 0.07) !important;
   border-radius: 20px !important;
-  height: 358px;
-  width: 896px;
+  /* height: 358px; */
+  /* width: 896px; */
 }
 
 .greeting--home {
-  width: 130px;
-  height: 60px;
+  /* width: 130px; */
+  /* height: 60px; */
   font-weight: 700;
   font-size: 46px;
   line-height: 60px;
@@ -166,7 +173,7 @@ a {
 
 .greeting--hello {
   /* width: 163px; */
-  height: 22px;
+  /* height: 22px; */
   font-weight: 500;
   font-size: 30px;
   line-height: 22px;
@@ -176,22 +183,22 @@ a {
 }
 
 .user--image {
-  height: 140px !important;
-  width: 140px !important;
+  /* height: 140px !important;
+  width: 140px !important; */
   border-radius: 46.290321350097656px;
 }
 
 .home--income {
-  height: 178.57325744628906px;
-  width: 163px;
+  /* height: 178.57325744628906px;
+  width: 163px; */
   border-radius: 20px !important;
   padding: 10px;
   text-decoration: none;
 }
 
 .export--share {
-  height: 108px;
-  width: 152px;
+  /* height: 108px;
+  width: 152px; */
   border-radius: 20px;
   background: #dededf !important;
   box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.03) !important;
@@ -201,7 +208,7 @@ a {
 
 .income-title,
 .expense-title {
-  height: 14px;
+  /* height: 14px; */
   margin-top: 40px;
   margin-left: 10px;
   font-weight: 400;
@@ -212,7 +219,7 @@ a {
 }
 
 .income-value {
-  height: 25.08px;
+  /* height: 25.08px; */
   margin-left: 10px;
   font-weight: 700;
   font-size: 24px;
@@ -221,7 +228,7 @@ a {
 }
 
 .expense-value {
-  height: 25.08px;
+  /* height: 25.08px; */
   margin-left: 10px;
   font-weight: 700;
   font-size: 24px;
@@ -230,17 +237,17 @@ a {
 }
 
 .home--balance {
-  height: 138px;
-  width: 469px;
-  left: 90px;
-  top: 40px;
+  /* height: 138px; */
+  /* width: 469px; */
+  /* left: 90px;
+  top: 40px; */
   border-radius: 24px !important;
   background: #3ec3d5 !important;
 }
 
 .balance {
-  width: 122.08px;
-  height: 20px;
+  /* width: 122.08px; */
+  /* height: 20px; */
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -248,8 +255,8 @@ a {
 }
 
 .balance--value {
-  width: 237.98px;
-  height: 62px;
+  /* width: 237.98px; */
+  /* height: 62px; */
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
@@ -263,8 +270,8 @@ a {
 }
 
 .activities--button {
-  height: 76px;
-  width: 410px;
+  /* height: 76px;
+  width: 410px; */
   border-radius: 10px 10px 10px 0px;
 }
 
@@ -293,10 +300,10 @@ a {
 }
 
 .mobile--nav {
-  position: fixed;
-  top: 663px;
+  /* position: fixed; */
+  /* top: 363px; */
+  bottom: 0;
   z-index: 1;
-  max-height: 80px;
 }
 
 .add--button {
@@ -362,9 +369,8 @@ a {
     background: #dededf !important;
     box-shadow: 0px 18px 48px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
-    display: flex;
-    height: 280px;
-    width: 100%;
+    /* height: 280px;
+    width: 100%; */
   }
   .greeting--home {
     visibility: hidden;
@@ -375,8 +381,8 @@ a {
     visibility: visible;
     position: absolute;
     content: "Hello, Maria";
-    width: 90px;
-    height: 22px;
+    /* width: 90px;
+    height: 22px; */
     font-weight: 400;
     font-size: 17px;
     color: #1d2025;
@@ -391,8 +397,8 @@ a {
     content: "Home";
     position: absolute;
     visibility: visible;
-    width: 95px;
-    height: 44px;
+    /* width: 95px;
+    height: 44px; */
     font-weight: 700;
     font-size: 34px;
     letter-spacing: -0.37px;
@@ -400,9 +406,9 @@ a {
   }
 
   .home--balance {
-    height: 120px;
+    /* height: 120px;
     top: 15px;
-    left: 0px;
+    left: 0px; */
     width: 100%;
     border-radius: 24px;
   }
@@ -443,15 +449,15 @@ a {
   }
 
   .home--income {
-    height: 172px;
-    width: 157px;
+    /* height: 172px;
+    width: 157px; */
     background: #dededf !important;
     box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.03);
   }
 
   .income-value,
   .expense-value {
-    height: 24px;
+    /* height: 24px; */
     font-weight: 700;
     font-size: 21px;
     line-height: 24px;
@@ -459,16 +465,16 @@ a {
   }
 
   .income--card {
-    height: 130px;
-    width: 338px;
+    /* height: 130px;
+    width: 338px; */
     background: #40db6e;
     box-shadow: 0px 18px 42px rgba(51, 201, 255, 0.2);
     border-radius: 20px;
   }
 
   .expense--card {
-    height: 130px;
-    width: 338px;
+    /* height: 130px;
+    width: 338px; */
     background: rgba(255, 84, 96, 1);
 
     box-shadow: 0px 18px 42px rgba(51, 201, 255, 0.2);
@@ -476,8 +482,8 @@ a {
   }
 
   .income--fig {
-    height: 12px;
-    width: 64px;
+    /* height: 12px;
+    width: 64px; */
     font-weight: 500;
     font-size: 15px;
     line-height: 12px;
@@ -485,8 +491,8 @@ a {
   }
 
   .income-username {
-    width: 126px;
-    height: 12px;
+    /* width: 126px;
+    height: 12px; */
     font-weight: 500;
     font-size: 15px;
     line-height: 12px;
@@ -571,6 +577,7 @@ ul {
 }
 
 .menu-list {
+  position: relative;
   margin-bottom: 30px;
   text-decoration: none;
 }
@@ -588,7 +595,9 @@ ul {
 .menu-list:before {
   content: url(./images/Polygon-menu.svg);
   position: absolute;
-  left: 25px;
+  right: 0px;
+  left: -190px;
+  top: 8px;
 }
 
 .left-sidebar {

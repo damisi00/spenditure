@@ -1,9 +1,6 @@
-/* .spenditure__footer-container{
-    display: flex;
-    
-} */
-
-
+.footer-menu {
+  margin-top: 10px;
+}
 .footer-menu > a {
   color: black;
   text-decoration: none;
@@ -56,6 +53,11 @@
 
 .menu-content {
   margin: 0 2rem;
+}
+
+.menu-content a:hover{
+  color:#1d2025;
+  font-weight: 500;
 }
 
 .menu-content a {
@@ -118,8 +120,8 @@
     display: none;
   }
   .input-arrow {
-  right: 45px;
-  top: 13px;
+    right: 45px;
+    top: 13px;
   }
   .footer-input {
     width: 140px;

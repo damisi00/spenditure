@@ -3,7 +3,7 @@ import Logo from "../../images/footer-logo.svg";
 import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 import Linkedin from "../../images/linkedin.svg";
-import Arrow from "../../images/submit-arrow.svg";
+import { NewsLetterForm } from "../Updates";
 
 import "./footer.css";
 
@@ -11,23 +11,14 @@ const CompanyMenu = () => (
   <div className="menu-content">
     <h4>Company</h4>
     <div className="d-flex flex-column">
-      <div className="pt-2 footer-menu">
+      <div className="footer-menu">
         <a href="/about"> About Us </a>
       </div>
       <div className="footer-menu">
-        <a href="/contact"> Contact Us </a>
+        <a href="/contact"> FAQs </a>
       </div>
       <div className="footer-menu">
-        <a href="/security"> Security </a>
-      </div>
-      <div className="footer-menu">
-        <a href="/goals"> Goals </a>
-      </div>
-      <div className="footer-menu">
-        <a href="/terms"> Our Terms </a>
-      </div>
-      <div className="footer-menu">
-        <a href="/terms"> Terms of Service </a>
+        <a href="/security"> Blog </a>
       </div>
     </div>
   </div>
@@ -36,7 +27,7 @@ const FeatureMenu = () => (
   <div className="menu-content">
     <h4>Features</h4>
     <div className="d-flex flex-column">
-      <div className="pt-2 footer-menu">
+      <div className="footer-menu">
         <a href="/budget"> Budgeting </a>
       </div>
       <div className="footer-menu">
@@ -44,9 +35,6 @@ const FeatureMenu = () => (
       </div>
       <div className="footer-menu">
         <a href="/tracker"> Tracker </a>
-      </div>
-      <div className="footer-menu">
-        <a href="/mobile"> Mobile App </a>
       </div>
       <div className="footer-menu">
         <a href="/credit"> Credit Score </a>
@@ -59,12 +47,6 @@ const HelpMenu = () => (
   <div className="menu-content">
     <h4>Help Center</h4>
     <div className="d-flex flex-column">
-      <div className="pt-1 footer-menu">
-        <a href="/help">Spenditure Help</a>
-      </div>
-      <div className="footer-menu">
-        <a href="/faq"> FAQs </a>
-      </div>
       <div className="footer-menu">
         <a href="/privacy"> Privacy </a>
       </div>
@@ -72,10 +54,7 @@ const HelpMenu = () => (
         <a href="/terms"> Terms </a>
       </div>
       <div className="footer-menu">
-        <a href="/account"> Account Management </a>
-      </div>
-      <div className="footer-menu">
-        <a href="/accounts"> Accounts & Transactions </a>
+        <a href="/account"> Security </a>
       </div>
     </div>
   </div>
@@ -117,16 +96,8 @@ const NewsletterMenu = () => (
     <h4>Stay up to date</h4>
     <p className="mt-2">Subscribe To Our Newsletter</p>
 
-    <form action="" className="position-relative pt-3 w-100">
-      <input
-        type="text"
-        className="footer-input pe-5 w-100"
-        placeholder="Email"
-      />
-      <button className="input-arrow position-absolute border-0">
-        <img src={Arrow} alt="arrow" />
-      </button>
-    </form>
+    <NewsLetterForm/>
+
   </div>
 );
 

@@ -42,13 +42,13 @@
 
 .get-started-btn{
     font-family:var(--font-family);
-    background: #FF5460;
-    border-radius: 10px;
+    background: #23273c;
+    border-radius: 5px;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 31px;
     color: #FCFCFD;
-    padding: .5rem;
+    padding: 0.9rem;
     border: none;
     outline: none;
     }

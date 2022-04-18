@@ -5,18 +5,18 @@ import Main from "../home/Main"
 const Home = () => {
   return (
     <main>
-      <section className="container-fluid">
-        <div className="home row">
+      <section className="">
+        <div className="row">
           
-          <div className="left-sidebar col-sm-2 container d-none d-md-block">
+          <div className="left-sidebar col-lg-3 col-md-2 d-none d-md-none d-lg-block">
             <LeftNav />
           </div>
 
-          <div id="main" className="container col-sm-8 pb-4">
+          <div id="main" className="col-md-8 ">
             <Main />
           </div>
 
-          <div className="right-sidebar col-sm-2 container-fluid d-none d-md-block">
+          <div className="right-sidebar col-md-1 d-none d-md-none d-lg-block">
             <RightNav />
           </div>
         </div>

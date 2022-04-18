@@ -39,6 +39,9 @@
     
 }
 
+.what-we-offer-img{
+    width: 75%;
+}
 
 .spenditure__whatweoffer-content h1{
     font-family: var(--font-family);

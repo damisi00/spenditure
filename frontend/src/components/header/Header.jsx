@@ -13,16 +13,16 @@ const Header = () => {
       <div className="spenditure__header-content">
         <Fade left cascade={true}>
           <h1 className="spenditure__header-text">
-            A simplified way to take charge and{" "}
+            A simplified way to take charge and <br />
             <span className="green-text">control of your finances</span>
           </h1>
           <p>
             Create custom budgets, track financial expenditures and discover
             investment opportunities{" "}
           </p>
-          <div className="spenditure__header-content-button">
-            <Link to="/signup">
-              <button type="button">Sign up for Spenditure</button>
+          <div className="d-flex justify-content-center spenditure__header-content-button">
+            <Link className="px-2 text-decoration-none" to="/signup">
+              <button className="signup__" type="button">Sign up for Spenditure</button>
             </Link>
           </div>
           <div className="spenditure__header-download">

@@ -12,7 +12,7 @@ const Testimonial = ({paragraph, profileName, profileImg}) => {
                 </div>
                 <div className="spenditure__testimonial-card-profile">
                     <img className="profile-img" src={profileImg} alt="profile"/>
-                    <p>{profileName}</p>
+                    <p className='name'>{profileName}</p>
                 </div>
             </div>
 
