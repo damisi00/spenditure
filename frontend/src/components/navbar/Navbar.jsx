@@ -95,11 +95,7 @@ const Navbar = () => {
               <div className="spenditure__navbar-menu_container-links-sign">
                 <Link className="px-2 nav-item nav-link" to="/login">
                   {" "}
-                  <button
-                    className="signin--btn"
-                  >
-                    Sign in
-                  </button>{" "}
+                  <button className="signin--btn">Sign in</button>{" "}
                 </Link>
                 <Link className="px-2 nav-item nav-link" to="/signup">
                   <button

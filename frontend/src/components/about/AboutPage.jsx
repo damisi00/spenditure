@@ -1,14 +1,15 @@
 import React from "react";
-import Navbar from "./navbar/Navbar";
-import ABOUTIMG1 from "../images/aboutus1.png";
-import ABOUTIMG2 from "../images/aboutus2.png";
-import Facebook from "../images/facebook.svg";
-import Instagram from "../images/instagram.svg";
-import Linkedin from "../images/linkedin.svg";
-import Footer from "./footer/Footer";
-import Updates from "./Updates";
+import Navbar from "../navbar/Navbar";
+import ABOUTIMG1 from "../../images/aboutus1.png";
+import ABOUTIMG2 from "../../images/aboutus2.png";
+import Facebook from "../../images/facebook.svg";
+import Instagram from "../../images/instagram.svg";
+import Linkedin from "../../images/linkedin.svg";
+import Footer from "../footer/Footer";
+import Updates from "../Updates";
+import About from "./About";
 
-const AboutUs = () => {
+const AboutPage = () => {
   return (
     <div>
       <div className=" fixed-top navbarScroll bg-light shadow-sm">
@@ -20,11 +21,7 @@ const AboutUs = () => {
         style={{ marginTop: "100px" }}
       >
         <div className="mt-5">
-          <img
-            src={ABOUTIMG1}
-            alt="aboutus1"
-            className="img-fluid"
-          />
+          <img src={ABOUTIMG1} alt="aboutus1" className="img-fluid" />
         </div>
 
         <div className="text-center card mt-5 border-0">
@@ -58,49 +55,9 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
-        <div className="row g-0">
-          <div className="col-sm-12 col-md-4 col-lg-4 mt-5 px-5">
-            <div className="card border-0 h-100">
-              <h2 className="card-title">Our Believe</h2>
-              <div className="about--believe card-body  text-start shadow-lg">
-                <p className="card-text">
-                  Our belief is that spenditure will make many people
-                  financially free due to the budgeting feature embedded in our
-                  app; it will make people to control how they spend theirmoney
-                  and direct their finances to a fertile soil where the money
-                  can grow into sustainable wealth.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-4 col-lg-4 mt-5 px-5">
-            <div className="card border-0 h-100">
-              <h2 className="card-title">Our Goal</h2>
-              <div className="about--goal card-body text-start shadow-lg">
-                <p className="card-text">
-                  Research has it that Nigeria has over 200 million people and
-                  over 40% of the population are poor. Spenditure aims to make
-                  at least 50% of the populace financially independent.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-4 col-lg-4 mt-5 px-5 border-0">
-            <div className="card border-0 h-100">
-              <h2 className="card-title">Our Vision</h2>
-              <div className="about--vision card-body text-start shadow-lg">
-                <p className="card-text">
-                  To be the ultimate and financial app that will help 1 million
-                  people to be financially free
-                </p>
-              </div>
-            </div>
-          </div>
+        <div>
+          <About />
         </div>
-
         <div className="mt-5 row g-0">
           <div className="col-sm-6 col-md-6 col-lg-6">
             <img className="img-fluid" src={ABOUTIMG2} alt="aboutus2" />
@@ -148,4 +105,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutPage;

@@ -5,12 +5,12 @@ import SignUp from "../src/components/signUp/SignUp";
 import { Route, Routes } from "react-router-dom";
 import Home from "../src/components/home/Home";
 import ScrollToTop from "./components/ScrollToTop";
-import AboutUs from "./components/AboutUs";
 import Tracker from "./components/tracker/Tracker";
 import TrackerIncome from "./components/tracker/TrackerIncome";
 import TrackerExpense from "./components/tracker/TrackerExpense";
 import Budget from "./components/budget/Budget";
 import CreatBudget from "./components/budget/CreateBudget";
+import AboutPage from "./components/about/AboutPage";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<LandingPage />}></Route>
         <Route exact path="/login/*" element={<SignIn />}></Route>
-        <Route exact path="/about/*" element={<AboutUs />}></Route>
+        <Route exact path="/about/*" element={<AboutPage />}></Route>
         <Route exact path="/signup/*" element={<SignUp />}></Route>
         <Route exact path="/homepage/*" element={<Home />}></Route>
         <Route exact path="/tracker/*" element={<Tracker />}></Route>
