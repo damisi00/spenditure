@@ -109,40 +109,9 @@ a {
   line-height: 26px;
   letter-spacing: 0.005em;
   color: #ffffff;
+  padding: 10px;
 }
 
-.about--goal {
-  width: 300px;
-  height: 390.23px;
-  background: #ff5460;
-  border-radius: 6px;
-}
-
-.about--goal > p {
-  width: 210px;
-  height: 234px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-.about--vision {
-  width: 300px;
-  height: 390.23px;
-  background: #3cd760;
-  border-radius: 6px;
-}
-
-.about--vision > p {
-  width: 229px;
-  height: 104px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: 0.005em;
-  color: #ffffff;
-}
 .news-input{
   text-indent: 15px;
 }
