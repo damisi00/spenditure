@@ -18,7 +18,7 @@ const CompanyMenu = () => (
         <a href="/contact"> FAQs </a>
       </div>
       <div className="footer-menu">
-        <a href="/security"> Blog </a>
+        <a href="http://blog.spenditure.com.ng/"> Blog </a>
       </div>
     </div>
   </div>
