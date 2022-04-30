@@ -108,13 +108,14 @@
 }
 
 @media (max-width: 990px) {
+
   .spenditure__footer-mobile-container {
     display: flex;
     flex-direction: column;
   }
   .spenditure__footer-mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .spenditure__footer-menu {
     display: none;
@@ -137,6 +138,13 @@
     flex-direction: column;
     padding: 1rem 0;
   }
+
+  .menu-content.newsletter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   .menu-content p {
     padding: 0.2rem 0;
   }

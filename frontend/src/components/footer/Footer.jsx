@@ -92,12 +92,11 @@ const ContactMenu = () => (
   </div>
 );
 const NewsletterMenu = () => (
-  <div className="menu-content">
+  <div className="menu-content newsletter">
     <h4>Stay up to date</h4>
     <p className="mt-2">Subscribe To Our Newsletter</p>
 
-    <NewsLetterForm/>
-
+    <NewsLetterForm />
   </div>
 );
 
@@ -106,8 +105,8 @@ const Footer = () => {
   let thisYear = today.getFullYear();
 
   return (
-    <div className="spenditure__footer p-3 pt-5">
-      <div className="spenditure__footer-container pt-5 mb-5">
+    <div className="spenditure__footer p-3">
+      <div className="spenditure__footer-container">
         <div className="spenditure__footer-menu">
           {" "}
           <div className="row g-0 mb-5">
@@ -134,22 +133,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="spenditure__footer-mobile-container">
-          <div className="spenditure__footer-mobile">
-            <div className="first-row">
-              <CompanyMenu />
-              <div className="mt-4">
-                <HelpMenu />
-              </div>
-            </div>
-            <div className="second-row">
-              <FeatureMenu />
-              <div className="mt-5">
-                <ContactMenu />
-              </div>
-            </div>
-          </div>
-          <div>
+          <div className="">
             <NewsletterMenu />
+          </div>
+          <div className="spenditure__footer-mobile mt-4">
+            <div className="d-flex">
+              <CompanyMenu />
+              <HelpMenu />
+            </div>
+            <div className="d-flex mt-5">
+              <FeatureMenu />
+              <ContactMenu />
+            </div>
           </div>
           <div className="footer-logo-container-mobile">
             <img className="footer-logo" src={Logo} alt="logo" />
