@@ -24,7 +24,7 @@ const Menu = () => {
           <a
             className="nav-link"
             aria-current="page"
-            href="https://dev-spenditure.pantheonsite.io/blog/"
+            href="http://blog.spenditure.com.ng/"
             target="_blank"
             rel="noreferrer"
           >
