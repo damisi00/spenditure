@@ -6,7 +6,7 @@ import Security from "../security/Security";
 import GetFinance from "../getFinance/GetFinance";
 import WhatWeOffer from "../whatWeOffer/WhatWeOffer";
 import Features from "../features/Features";
-import Testimonials from "../testimonials/Testimonials";
+// import Testimonials from "../testimonials/Testimonials";
 import Download from "../download/Download";
 import Footer from "../footer/Footer";
 import { Routes, Route } from "react-router-dom";
@@ -26,7 +26,7 @@ const LandingPage = () => {
       <GetFinance />
       <WhatWeOffer />
       <Features />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Download />
       <Footer />{" "}
     </div>
