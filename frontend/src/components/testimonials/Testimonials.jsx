@@ -4,12 +4,9 @@ import { card } from "./data";
 import Testimonial from "./Testimonial";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-const Testimonials = () => {
-  const cards = card.map((testimonial) => (
-    <Testimonial key={testimonial.id} {...testimonial} />
-  ));
 
-  const responsive = {
+
+  export const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1400 },
       items: 3,
@@ -26,6 +23,12 @@ const Testimonials = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+  
+const Testimonials = () => {
+  const cards = card.map((testimonial) => (
+    <Testimonial key={testimonial.id} {...testimonial} />
+  ));
+
   return (
     <div className="spenditure__testimonial section__padding">
       <div className="testimonial-header">
