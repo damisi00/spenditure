@@ -1,47 +1,77 @@
-.spenditure__download{
-    background-color:#23273C;
-
+.spenditure__download {
+  background-color: #23273c;
 }
 
-.spenditure__download-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.spenditure__download.section__padding{
+    padding: 25px;
+}
+
+
+.spenditure__download-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spenditure__download-content-header h1 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 78px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.spenditure__download-content-p p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fcfcfd;
+}
+.spenditure__download-content-btn {
+  display: flex;
+  margin-top: 1rem;
+}
+.spenditure__download-content-btn div{
+    padding: 0px 18px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .spenditure__download-content-header h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 163.15%;
+    /* or 39px */
     align-items: center;
-}
+    padding: 0px;
+    color: #fcfcfd;
+  }
+  .spenditure__download-content-p p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 163.15%;
+    /* identical to box height, or 23px */
+    align-items: center;
+    margin-bottom: 0px;
+    color: #fcfcfd;
+  }
+  .spenditure__download-content-btn{
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+  }
+  .spenditure__download-content-btn div{
+      padding: 0px 18px;
+  }
+  .img{
+      height: auto;
+      width: 150px;
+  }
 
-.spenditure__download-content-header h1{
-    font-family: var(--font-family);
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 78px;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 2rem 0;
-}
+  .spenditure__download.section__padding{
+      padding: 10px;
+  }
 
-.spenditure__download-content-p p{
-    font-family: var(--font-family);
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 29px;
-    color: #FCFCFD;
-
-}
-.spenditure__download-content-btn{
-    display: flex;
-    margin-top: 2rem;
-}
-.app-store,
-.google-pay{
-    background: #1D2025;
-    border-radius: 5px;
-    font-family: var(--font-family);
-    font-size: 11px;
-    line-height: 15px;
-    color: #FCFCFD;
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem;
-    margin-right: 1.5rem;
 }

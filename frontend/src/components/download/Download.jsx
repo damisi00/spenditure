@@ -1,6 +1,6 @@
 import React from "react";
-import appleLogo from "../../images/apple.png";
-import playStore from "../../images/play-store.png";
+import AppleStore from "../../images/store-apple.png";
+import GoogleStore from "../../images/store-google.png";
 
 import "./download.css";
 
@@ -15,21 +15,11 @@ const Download = () => {
           <p>Spend less and secure the future with spenditure</p>
         </div>
         <div className="spenditure__download-content-btn">
-          <div className="app-store border">
-            <img src={appleLogo} alt="applelogo" className="download-img" />
-            <span className="download-apple">
-              Download on <span className="bold"> App store</span>
-            </span>
+          <div>
+            <img className="img" src={AppleStore} alt="" />
           </div>
-          <div className="google-pay border">
-            <img
-              src={playStore}
-              alt="playStore logo"
-              className="download-img"
-            />
-            <span className="download-google">
-              Download on <span className="bold">Google play</span>
-            </span>
+          <div>
+            <img className="img" src={GoogleStore} alt="" />
           </div>
         </div>
       </div>
