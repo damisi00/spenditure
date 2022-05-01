@@ -1,8 +1,8 @@
 import React from "react";
 import peopleImg from "../../images/header-img.png";
 import headerDots from "../../images/header-dots.png";
-import appleLogo from "../../images/apple.png";
-import playStore from "../../images/play-store.png";
+import AppleStore from "../../images/store-apple.png";
+import GoogleStore from "../../images/store-google.png";
 import "./header.css";
 import Fade from "react-reveal";
 import { Link } from "react-router-dom";
@@ -21,26 +21,18 @@ const Header = () => {
             investment opportunities{" "}
           </p>
           <div className="d-flex justify-content-center spenditure__header-content-button">
-            <Link className="px-2 text-decoration-none" to="/signup">
-              <button className="signup__" type="button">Sign up for Spenditure</button>
+            <Link className="text-decoration-none" to="/signup">
+              <button className="signup__">
+                Sign up for Spenditure
+              </button>
             </Link>
           </div>
           <div className="spenditure__header-download">
             <div className="app-store">
-              <img src={appleLogo} alt="applelogo" className="download-img" />
-              <span className="download-apple">
-                Download on <span className="bold"> App store</span>
-              </span>
+              <img src={AppleStore} alt="applelogo"/>
             </div>
             <div className="google-pay">
-              <img
-                src={playStore}
-                alt="playStore logo"
-                className="download-img"
-              />
-              <span className="download-google">
-                Download on <span className="bold">Google play</span>
-              </span>
+              <img src={GoogleStore} alt="playStore logo"/>
             </div>
           </div>
         </Fade>
@@ -52,7 +44,7 @@ const Header = () => {
           </div>
           <div className="img-dots">
             <img src={headerDots} className="header-img" alt="dots" />
-          </div> 
+          </div>
         </Fade>
       </div>
     </div>

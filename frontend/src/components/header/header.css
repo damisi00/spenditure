@@ -45,38 +45,14 @@
 
 .spenditure__header-download {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .app-store,
 .google-pay {
-  width: 180px;
-  height: 71px;
   background: #1d2025;
   border-radius: 10px;
-  font-family: var(--font-family);
-  font-size: 11px;
-  line-height: 15px;
-  color: #fcfcfd;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.bold {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-.download-apple,
-.download-google {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.download-img {
-  width: 20.07px;
-  height: 25.43px;
-  padding-right: 0.1rem;
 }
 .spenditure__header-images {
   position: relative;
@@ -160,11 +136,12 @@
     background: #23273c;
     border-radius: 5px;
   }
-  
-.spenditure__header-download {
+
+  .spenditure__header-download {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;  }
+    margin-top: 2rem;
+  }
 
 }
