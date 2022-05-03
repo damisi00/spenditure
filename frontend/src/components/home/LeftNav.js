@@ -67,15 +67,6 @@ const LeftNav = () => {
           </li>
         </ul>
 
-        <div
-          id="border"
-          style={{
-            border: "1px solid white",
-            width: "80%",
-            margin: "20px",
-            marginRight: "-35px",
-          }}
-        ></div>
 
         <ul className="">
           <li>
