@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
 }
 .spenditure__navbar-links-logo {
   display: flex;
@@ -41,6 +41,12 @@
   display: flex;
 }
 
+li{
+  margin-left: 20px;
+}
+.px-2{
+  padding: 0px !important;
+}
 .signin--btn {
   display: flex;
   flex-direction: row;
