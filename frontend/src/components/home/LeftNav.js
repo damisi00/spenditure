@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/home-logo.svg";
+import Logo from "../../images/LOGOnew.png";
 import { Link } from "react-router-dom";
 
 const LeftNav = () => {
