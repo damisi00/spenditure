@@ -562,13 +562,6 @@ ul {
   color: #ff5460;
 }
 
-.menu-list:before {
-  content: url(./images/Polygon-menu.svg);
-  position: absolute;
-  right: 0px;
-  left: -190px;
-  top: 8px;
-}
 
 .left-sidebar {
   background-color: #1a2137;
