@@ -40,11 +40,11 @@
 .spenditure__navbar-sign {
   display: flex;
 }
-
-li{
-  margin-left: 20px;
+ul {
+  gap: 40px;
 }
-.px-2{
+
+.px-2 {
   padding: 0px !important;
 }
 .signin--btn {

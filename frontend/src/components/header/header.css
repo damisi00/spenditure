@@ -46,6 +46,7 @@
 .spenditure__header-download {
   display: flex;
   margin-top: 3rem;
+  gap: 15px;
 }
 .app-store,
 .google-pay {
