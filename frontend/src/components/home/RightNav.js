@@ -1,72 +1,97 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Google from "../../images/download-google.svg";
+import Apple from "../../images/download-apple.svg";
+import Grocery from "../../images/grocery.svg";
+import Ipad from "../../images/Ipadpro.svg";
+import Uber from "../../images/uber1.svg";
 
+const Items = ({ img, item, price, date }) => {
+  return (
+    <div className="">
+      <div className="d-flex align-items-center gap-3">
+        <div>
+          <img src={img} alt="" />
+        </div>
+        <div className="">
+          <p>
+            {item} <br /> <b>{price}</b>
+            <br /> <span>{date}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Categories = () => {
+  return (
+    <div className="">
+      <div className="d-flex gap-5">
+        <span className="me-4">
+          Categories
+        </span>
+        <span className="">
+          <Link to="/">See all</Link>
+        </span>
+      </div>
+
+      <div>
+        <Items
+          img={Grocery}
+          item="Grocery"
+          date="15, Aug. 2020"
+          price="-$243.00"
+        />
+        <Items
+          img={Ipad}
+          item="Ipad pro 2020"
+          date="10, Aug. 2020"
+          price="-$799.00"
+        />
+        <Items img={Uber} item="Uber" date="5, Mar. 2020" price="+$50.00" />
+      </div>
+    </div>
+  );
+};
+
+const Downloads = () => {
+  return (
+    <div className="download-store d-flex flex-column p-4">
+      <h4 className="">Download the mobile App</h4>
+      <div className="d-flex flex-column justify-content-center gap-2">
+        <div>
+          <Link to="/">
+            <img src={Google} alt="google-playstore" />
+          </Link>
+        </div>
+        <div>
+          <Link to="/">
+            <img src={Apple} alt="Apple-store" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
 const RightNav = () => {
   return (
-    <div>
+    <div className="right-nav position-relative">
       <div className="right-items">
-        <div>
-          <div className="ms-2">
-            <button
-              className="border-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <span className="">
-                <img src="./Images/Search-icon.svg" alt="" />
-              </span>
-            </button>
-            <div
-              className="offcanvas offcanvas-end"
-              tabIndex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div className="offcanvas-header">
-                <button
-                  type="button"
-                  className="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div className="offcanvas-body">
-                <form className="d-flex">
-                  <input
-                    className="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button className="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style={{ margin: "40px 10px" }} className="position-relative">
-          <span
-            style={{ right: "30px" }}
-            className="position-absolute top-5 translate-middle badge rounded-pill bg-danger"
-          >
+        <div className="position-relative">
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
             3
           </span>
           <a href="/">
-            <img src="./Images/bell.svg" alt="" />
+            <img className="bell" src="./Images/bell.svg" alt="" />
           </a>
         </div>
       </div>
-      <div className="ms-1">
-        <a href="/">
-          <img
-            style={{ width: "35.59px", height: "30.59px" }}
-            src="./Images/web-add.svg"
-            alt=""
-          />
-        </a>
+      <div>
+        <Downloads />
+      </div>
+      <div className="">
+        <Categories />
       </div>
     </div>
   );
