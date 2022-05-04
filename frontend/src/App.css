@@ -2,7 +2,7 @@
 
 body {
   font-family: "Plus Jakarta Display", sans-serif !important;
-  color: #1D2025;
+  color: #1d2025;
 }
 
 * {
@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  /* border: 2px solid red; */
+  /* border: 0.5px solid red; */
 }
 
 .gradient-bg {
@@ -113,10 +113,10 @@ a {
   padding: 10px;
 }
 
-.news-input{
+.news-input {
   text-indent: 15px;
 }
-.envelop-icon{
+.envelop-icon {
   position: absolute;
   top: 11px;
   left: 6px;
@@ -125,9 +125,9 @@ a {
 }
 
 .home-card {
-  background: #1a2537 !important;
+  background: #f8f8ff !important;
   box-shadow: 0px 18px 48px rgba(0, 0, 0, 0.07) !important;
-  border-radius: 20px !important;
+  border-radius: 5px !important;
   /* height: 358px; */
   /* width: 896px; */
 }
@@ -138,7 +138,6 @@ a {
   font-weight: 700;
   font-size: 46px;
   line-height: 60px;
-  color: #fcfcfd;
 }
 
 .greeting--hello {
@@ -149,26 +148,29 @@ a {
   line-height: 22px;
   display: flex;
   align-items: center;
-  color: rgba(252, 252, 253, 0.5);
 }
 
-.user--image {
-  /* height: 140px !important;
-  width: 140px !important; */
-  border-radius: 46.290321350097656px;
+.user--img {
+  height: auto;
+  width: 60px;
 }
-
+.bal-inco-exp {
+  background: #1a2137;
+  border-radius: 8px;
+  padding: 10px;
+}
 .home--income {
-  /* height: 178.57325744628906px;
-  width: 163px; */
   border-radius: 20px !important;
   padding: 10px;
   text-decoration: none;
 }
 
+.icon--img {
+  height: auto;
+  width: 40px;
+}
+
 .export--share {
-  /* height: 108px;
-  width: 152px; */
   border-radius: 20px;
   background: #dededf !important;
   box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.03) !important;
@@ -178,9 +180,6 @@ a {
 
 .income-title,
 .expense-title {
-  /* height: 14px; */
-  margin-top: 40px;
-  margin-left: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -189,8 +188,6 @@ a {
 }
 
 .income-value {
-  /* height: 25.08px; */
-  margin-left: 10px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -198,7 +195,6 @@ a {
 }
 
 .expense-value {
-  /* height: 25.08px; */
   margin-left: 10px;
   font-weight: 700;
   font-size: 24px;
@@ -207,17 +203,11 @@ a {
 }
 
 .home--balance {
-  /* height: 138px; */
-  /* width: 469px; */
-  /* left: 90px;
-  top: 40px; */
-  border-radius: 24px !important;
+  border-radius: 8px !important;
   background: #3ec3d5 !important;
 }
 
 .balance {
-  /* width: 122.08px; */
-  /* height: 20px; */
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -225,24 +215,11 @@ a {
 }
 
 .balance--value {
-  /* width: 237.98px; */
-  /* height: 62px; */
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
   letter-spacing: -0.37px;
   color: #fcfcfd;
-}
-
-.balance-calender {
-  animation-timing-function: cubic-bezier(0.45, 1.45, 0.8, 1);
-  animation-duration: 300ms;
-}
-
-.activities--button {
-  /* height: 76px;
-  width: 410px; */
-  border-radius: 10px 10px 10px 0px;
 }
 
 .total {
@@ -339,8 +316,6 @@ a {
     background: #dededf !important;
     box-shadow: 0px 18px 48px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
-    /* height: 280px;
-    width: 100%; */
   }
   .greeting--home {
     visibility: hidden;
@@ -351,8 +326,6 @@ a {
     visibility: visible;
     position: absolute;
     content: "Hello, Maria";
-    /* width: 90px;
-    height: 22px; */
     font-weight: 400;
     font-size: 17px;
     color: #1d2025;
@@ -376,9 +349,6 @@ a {
   }
 
   .home--balance {
-    /* height: 120px;
-    top: 15px;
-    left: 0px; */
     width: 100%;
     border-radius: 24px;
   }
@@ -394,6 +364,7 @@ a {
     right: 80px;
     top: 19px;
   }
+
 
   .total {
     margin-top: -50px;
@@ -419,15 +390,12 @@ a {
   }
 
   .home--income {
-    /* height: 172px;
-    width: 157px; */
     background: #dededf !important;
     box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.03);
   }
 
   .income-value,
   .expense-value {
-    /* height: 24px; */
     font-weight: 700;
     font-size: 21px;
     line-height: 24px;
@@ -435,16 +403,12 @@ a {
   }
 
   .income--card {
-    /* height: 130px;
-    width: 338px; */
     background: #40db6e;
     box-shadow: 0px 18px 42px rgba(51, 201, 255, 0.2);
     border-radius: 20px;
   }
 
   .expense--card {
-    /* height: 130px;
-    width: 338px; */
     background: rgba(255, 84, 96, 1);
 
     box-shadow: 0px 18px 42px rgba(51, 201, 255, 0.2);
@@ -452,8 +416,6 @@ a {
   }
 
   .income--fig {
-    /* height: 12px;
-    width: 64px; */
     font-weight: 500;
     font-size: 15px;
     line-height: 12px;
@@ -461,8 +423,6 @@ a {
   }
 
   .income-username {
-    /* width: 126px;
-    height: 12px; */
     font-weight: 500;
     font-size: 15px;
     line-height: 12px;
@@ -537,9 +497,19 @@ a {
 }
 
 /* From main.css */
+.home-main.row {
+  margin: 0px;
+}
 
+#logo {
+  align-items: flex-start;
+}
 .menu-list > span {
-  color: white;
+  color: #999999;
+}
+ul#nav {
+  gap: 56px;
+  align-items: flex-start;
 }
 
 ul {
@@ -548,7 +518,6 @@ ul {
 
 .menu-list {
   position: relative;
-  margin-bottom: 30px;
   text-decoration: none;
 }
 
@@ -562,25 +531,47 @@ ul {
   color: #ff5460;
 }
 
-
 .left-sidebar {
-  background-color: #1a2137;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  color: white;
   border-radius: 0px 20px 20px 0px;
 }
-
-.right-sidebar {
-  background-color: #ebeaf0;
-  max-width: 110px !important;
+.right-sidebar.col-lg-2 {
+  display: flex;
+  padding: 0px;
 }
-
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .right-items {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
+  width: 15px;
+}
+.bell {
+  height: auto;
+  width: 15px;
+}
+
+.download-store {
+  background: #fcfcfd;
+  box-shadow: 0px 4px 12px rgba(35, 39, 60, 0.05);
+  border-radius: 5px;
+}
+
+.download-store h4 {
+  font-size: 10px;
+  text-align: center;
+}
+
+
+.recent {
+  background: #FCFCFD;
+  box-shadow: 4px 4px 12px rgba(35, 39, 60, 0.05);
+  border-radius: 5px;
 }
 
 /* Toggle on and off */
