@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Google from "../../images/download-google.svg";
-import Apple from "../../images/download-apple.svg";
 import User from "../../images/custmer-img.svg";
 import MobileNav from "./MobileNavMenu";
 import Grocery from "../../images/grocery.svg";
 import Ipad from "../../images/Ipadpro.svg";
 import Uber from "../../images/uber1.svg";
-import Medicine from "../../images/medicine-icon.svg";
+import Credited from "../../images/credited.png";
+import Debited from "../../images/debited.png";
+import Create from "../../images/create-icon.png";
+import Card from "../../images/add-card.png";
+import Security from "../../images/set-security.png";
 
 const Greetings = () => {
   const date = new Date();
@@ -25,7 +27,7 @@ const Greetings = () => {
 
   return (
     <div className="">
-      <h1 className="greeting--home">Home</h1>
+      {/* <h1 className="greeting--home">Home</h1> */}
       <p className="greeting--hello">Good {timeOfDay} Maria.</p>
     </div>
   );
@@ -55,8 +57,8 @@ const Bell = () => {
 const UserImage = () => {
   return (
     <div className="">
-      <div className="card-text d-flex">
-        <img className="user--img img-fluid" src={User} alt="" />
+      <div className="">
+        <img className="user--img img-fluid rounded-circle" src={User} alt="" />
       </div>
     </div>
   );
@@ -66,7 +68,7 @@ export const Income = () => {
   return (
     <div className="">
       <Link to="/income" className="home--income card">
-        <div style={{ padding: "10px 10px" }}>
+        <div>
           <img
             style={{ color: "#41dc65" }}
             src="./Images/web-backarrow.svg"
@@ -84,7 +86,7 @@ export const Expense = () => {
   return (
     <div className="">
       <Link to="/expense" className="card home--income">
-        <div style={{ padding: "10px 10px" }}>
+        <div>
           <img src="./Images/webforwardarrow.svg" alt="" />
         </div>
         <p className="expense-title">Expense</p>
@@ -103,105 +105,70 @@ const Balance = () => {
 
           <h4 className="balance--value">$25,520</h4>
         </div>
-        <div className="col">
-          <img
-            className="balance--calender"
-            src="./images/calender.svg"
-            alt=""
-          />
-        </div>
       </div>
     </div>
   );
 };
 
-const Items = ({ img, item, price, date }) => {
+export const Items = ({ img, item, price, date }) => {
   return (
-    <div>
-      <div className="d-flex justify-content-between">
+    <div className="d-flex justify-content-between">
+      <div className="d-flex gap-5">
         <div>
           <img src={img} alt="" />
         </div>
-        <div className="">
-          <p>
-            {item} <br /> <span>{date}</span>
-          </p>
-        </div>
-        <div>
-          <b>{price}</b>
-        </div>
+        <p>
+          {item} <br /> {date}
+        </p>
       </div>
+        <strong>{price}</strong>
     </div>
   );
 };
 
 const Activities = () => {
   return (
-    <div className="col card border-0">
+    <div className="recent col card border-0">
       <div className="card-body">
-        <button className="activities--button card-title">
-          View recent activities
-        </button>
-
-        <h5 className="card-subtitle mt-4">
+        <h5 className="card-subtitle mt-4 d-flex justify-content-between">
           RECENT ACTIVITIES
           <Link to="/">
-            <img
-              style={{ marginLeft: "150px" }}
-              src="./Images/dots-icon.svg"
-              alt=""
-            />
+            <img src="./Images/dots-icon.svg" alt="" />
           </Link>
         </h5>
 
-        <div className="mt-4">
+        <div className="mt-4 d-flex flex-column">
           <Items
-            img={Medicine}
-            item="Gaurthier Grewitt"
+            img={Credited}
+            item="Transportation category credited"
             date="Friday, 11:08 PM"
             price="$340.00"
           />
           <Items
-            img={Medicine}
-            item="Sukhbirpal Dhalan"
+            img={Credited}
+            item="Business savings category credited"
             date="Thursday, 01:00 AM"
             price="$328.22"
           />
           <Items
-            img={Medicine}
-            item="Lia Castro"
+            img={Debited}
+            item="Emergency fund category debited"
             date="Tuesday, 07:12 AM"
             price="$2561.34"
           />
           <Items
-            img={Medicine}
-            item="Xu Xuefeng"
+            img={Credited}
+            item="Rent savings category credited"
             date="Tuesday, 10:34 PM"
             price="$931.12"
           />
           <Items
-            img={Medicine}
-            item="Lia Castro"
+            img={Debited}
+            item="Airpods money category debited"
             date="Sunday, 05:40 PM"
             price="$128.43"
           />
         </div>
-      </div>
-    </div>
-  );
-};
-
-const Downloads = () => {
-  return (
-    <div className="container">
-      <h4 className="card-title">Download the mobile App</h4>
-      <div>
-        <Link to="/">
-          <img src={Google} alt="google-playstore" />
-        </Link>{" "}
-        <Link to="/">
-          <img src={Apple} alt="Apple-store" />
-        </Link>
       </div>
     </div>
   );
@@ -241,46 +208,74 @@ const Categories = () => {
 const Main = () => {
   return (
     <div>
-      <div className="px-3">
-        <div className="d-flex row home-card pt-2 px-2 mt-4 mb-5">
+      <div className="px-4 pb-5 home-card">
+        <div className="d-flex justify-content-center row pt-2 px-2 mt-4 mb-5">
           <div className="d-flex justify-content-between px-1 pb-1">
-            <div className="text-light">
-              <Greetings />
+            <div className="d-flex align-items-center gap-3">
+              <div>
+                <UserImage />
+              </div>
+              <div>
+                <Greetings />
+              </div>
             </div>
             <div>
               <div className="bell--compo">
                 <Bell />
               </div>
-
-              <UserImage />
             </div>
           </div>
 
-          <div className="row justify-between">
-            <div className="col d-none d-md-flex">
-              <div className="px-3">
-                <Income />
-              </div>
-              <div className="px-1">
-                <Expense />
-              </div>
-            </div>
+          <div className="bal-inco-exp row justify-between mt-4">
             <div className="col">
               <Balance />
             </div>
+            <div className="col d-none d-md-flex d-lg-flex gap-4">
+              <div className="">
+                <Income />
+              </div>
+              <div className="">
+                <Expense />
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul className="d-flex justify-content-center gap-5 mt-5">
+              <li>
+                <a className="d-flex flex-column text-decoration-none" href="/">
+                  <img
+                    className="icon--img mx-auto"
+                    src={Create}
+                    alt="budget"
+                  />
+                  <small className="mt-2 text-black">Create a Budget</small>
+                </a>
+              </li>
+              <li>
+                <a className="d-flex flex-column text-decoration-none" href="/">
+                  <img className="icon--img mx-auto" src={Card} alt="card" />
+                  <small className="mt-2 text-black">Add Card</small>
+                </a>
+              </li>
+              <li>
+                <a className="d-flex flex-column text-decoration-none" href="/">
+                  <img className="icon--img mx-auto" src={Security} alt="sec" />
+                  <small className="mt-2 text-black">
+                    Set Security Question
+                  </small>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div className="row">
-          <div className="d-none d-sm-none d-md-block d-lg-block col-md-6 col-lg-6 mb-0">
+          <div className="d-none d-sm-none d-md-block d-lg-block col-md-12 col-lg-12 mb-0">
             <Activities />
           </div>
 
-          <div className="col-12 col-sm-12 col-md-12 col-lg-6 card border-0 mb-0 px-0">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6 card border-0 mb-0 px-0 d-flex d-sm-flex d-md-none d-lg-none">
             <div className="card-body px-0">
-              <div className="d-none d-sm-none d-md-flex d-lg-flex">
-                <Downloads />
-              </div>
               <div className="container">
                 <Categories />
               </div>
