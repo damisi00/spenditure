@@ -121,7 +121,9 @@ export const Items = ({ img, item, price, date }) => {
           {item} <br /> {date}
         </p>
       </div>
-        <strong>{price}</strong>
+      <strong className={img === Credited ? "text-success" : "text-danger"}>
+        {price}
+      </strong>
     </div>
   );
 };
