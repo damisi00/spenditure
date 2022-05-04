@@ -1,25 +1,25 @@
 import React from "react";
 import Logo from "../../images/LOGOnew.png";
-import HomeIcon from "../../images/home-icon.svg";
-import Trackericon from "../../images/tracker-icon.svg";
-import BudgetIcon from "../../images/budget-icon.svg";
-import UserIcon from "../../images/user-icon.svg";
-import HelpIcon from "../../images/question-icon.svg";
-import SettingsIcon from "../../images/settings-icon.svg";
-import LogoutIcon from "../../images/logout-icon.svg";
+import HomeIcon from "../../images/home-icon.png";
+import Trackericon from "../../images/tracker-icon.png";
+import BudgetIcon from "../../images/budget-icon.png";
+import UserIcon from "../../images/user-icon.png";
+import HelpIcon from "../../images/question-icon.png";
+import SettingsIcon from "../../images/settings-icon.png";
+import LogoutIcon from "../../images/logout-icon.png";
 import { Link } from "react-router-dom";
 
 const LeftNav = () => {
   return (
     <div>
-      <div className="d-flex flex-column align-items-start">
+      <div className="d-flex flex-column align-items-center mt-5">
         <div id="logo" className="mb-3">
           <Link to="/">
             <img src={Logo} alt="" />
           </Link>
         </div>
 
-        <ul id="nav" className="d-flex flex-column">
+        <ul id="nav" className="d-flex flex-column mt-5">
           <li>
             <Link to="/homepage" className="menu-list">
               <img src={HomeIcon} alt="" />
