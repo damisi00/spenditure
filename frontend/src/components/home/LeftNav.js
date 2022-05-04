@@ -19,50 +19,50 @@ const LeftNav = () => {
           </Link>
         </div>
 
-        <ul id="nav" className="d-flex flex-column mt-5">
+        <ul id="nav" className="d-flex flex-column mt-5 position-relative">
           <li>
             <Link to="/homepage" className="menu-list">
               <img src={HomeIcon} alt="" />
-              <span style={{ marginLeft: "10px" }}>Home</span>
+              <span>Home</span>
             </Link>
           </li>
 
           <li>
             <Link to="/" className="menu-list">
               <img src={Trackericon} alt="" />
-              <span style={{ marginLeft: "10px" }}>Tracker</span>
+              <span>Tracker</span>
             </Link>
           </li>
 
           <li>
             <Link to="/" className="menu-list">
               <img src={BudgetIcon} alt="" />
-              <span style={{ marginLeft: "10px" }}>Budget</span>
+              <span>Budget</span>
             </Link>
           </li>
 
           <li>
             <Link to="/account" className="menu-list">
               <img src={UserIcon} alt="" />
-              <span style={{ marginLeft: "10px" }}>Account</span>
+              <span>Account</span>
             </Link>
           </li>
           <li>
             <Link className="menu-list" to="/">
               <img src={HelpIcon} alt="" />
-              <span style={{ marginLeft: "10px" }}>Get Help</span>
+              <span>Get Help</span>
             </Link>
           </li>
           <li>
             <Link className="menu-list" to="/">
               <img src={SettingsIcon} alt="" />
-              <span style={{ marginLeft: "10px" }}>Settings</span>
+              <span>Settings</span>
             </Link>
           </li>
 
           <li>
             <Link className="menu-list" to="/">
-              <img style={{ marginRight: "10px" }} src={LogoutIcon} alt="" />
+              <img src={LogoutIcon} alt="" />
               <span>Logout</span>
             </Link>
           </li>

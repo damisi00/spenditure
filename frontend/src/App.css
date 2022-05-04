@@ -365,7 +365,6 @@ a {
     top: 19px;
   }
 
-
   .total {
     margin-top: -50px;
   }
@@ -504,12 +503,14 @@ a {
 #logo {
   align-items: flex-start;
 }
+
 .menu-list > span {
   color: #999999;
 }
 ul#nav {
   gap: 56px;
   align-items: flex-start;
+  flex-grow: 1;
 }
 
 ul {
@@ -517,19 +518,19 @@ ul {
 }
 
 .menu-list {
-  position: relative;
+  display: inline-flex;
+  gap: 15px;
   text-decoration: none;
+  padding: 8px 35px;
+  background: transparent;
 }
 
-.menu-list > svg {
-  fill: #c3c2c8;
+.menu-list:focus,.menu-list:hover,.menu-list:active{
+  padding: 8px 35px;
+  background: #23273C;
+  border-radius: 8px;
 }
 
-.menu-list:focus svg,
-.menu-list:hover span {
-  fill: #ff5460;
-  color: #ff5460;
-}
 
 .left-sidebar {
   display: flex;
@@ -567,9 +568,8 @@ ul {
   text-align: center;
 }
 
-
 .recent {
-  background: #FCFCFD;
+  background: #fcfcfd;
   box-shadow: 4px 4px 12px rgba(35, 39, 60, 0.05);
   border-radius: 5px;
 }
